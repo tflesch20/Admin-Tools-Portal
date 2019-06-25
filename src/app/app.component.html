@@ -1,0 +1,45 @@
+<!--<ng-template [ngIf]="!rendering">-->
+  <div class="border" style="top:0; left:0"></div>
+  <div class="border" style="top:0; right:0"></div>
+  <input id="fadeButton" type="button" class="button" (click)="inProgress('DBAdminTool UI')" style="top:calc(80% - 10vh); left:calc(50% - 40vw)" value="DBAdminTool UI" readonly/>
+  <input id="fadeButton" type="button" class="button" (click)="inProgress('Rules UI')" style="top:calc(55% - 10vh); left:calc(50% - 40vw)" value="Rules UI" readonly/>
+  <input id="fadeButton" type="button" class="button" (click)="inProgress('QA UI')" style="top:calc(30% - 10vh); left:calc(50% - 40vw)" value="QA UI" readonly/>
+  <div (mouseenter)="expanded=true" (mouseleave)="expanded=false" class="header">
+    <span id="fadeHeader" style="font-family: Verdana, Geneva, Tahoma, sans-serif">Welcome to the Clause Logic<br>Data Admin Tools Portal</span>
+    <div *ngIf="expanded">
+      <span style="font-size:15px; padding:0; line-height:0; font-style:italic; cursor:pointer"(click)="NGHome()">Northrop Grumman</span>
+      <span style="font-size:14px; line-height:0; padding:0; border:0;"> ● </span>
+      <span style="font-size:15px; padding:0; line-height:0; font-style:italic; cursor:pointer" (click)="DPaCHome()">Defense Pricing and Contracting</span>
+    </div>
+    <aside id="fade">
+      <img style="position:fixed; top:20px; left:15px; width:200px; height: 40px;" src="assets/images/NG.PNG">
+   </aside>
+    <aside id="fade">
+      <img style="position:fixed; top:0; right:15px; width:88px; height:88px;" src="assets/images/DPAP_CLS2.png">
+    </aside>
+  </div>
+  <div class="footer" style="cursor:default"><span>Copyright © 2019 Northrop Grumman</span></div>
+<!--</ng-template>-->
+
+<!--
+<ng-template [ngIf]="rendering">
+  <div class="border" style="top:0; left:0; opacity:.4"></div>
+  <div class="border" style="top:0; right:0; opacity:.4"></div>
+  <input id="fadeButton" class="backgroundButton" style="top:calc(80% - 10vh); left:calc(50% - 40vw); cursor:not-allowed" value="DBAdminTool UI" readonly/>
+  <input id="fadeButton" class="backgroundButton" style="top:calc(55% - 10vh); left:calc(50% - 40vw); cursor:not-allowed" value="Rules UI" readonly />
+  <input id="fadeButton" class="backgroundButton" style="top:calc(30% - 10vh); left:calc(50% - 40vw); cursor:not-allowed" value="QA UI" readonly/>
+  <div id="fadeHeader" class="backgroundHeader" style="opacity:.4; cursor:default">
+    <span style="font-family: Verdana, Geneva, Tahoma, sans-serif">Welcome to the Clause Logic<br>Data Admin Tools Portal</span>
+    <aside id="fade">
+      <img style="position:fixed; top:20px; left:15px; width:200px; height: 40px;" src="assets/images/NG.PNG">
+    </aside>
+    <aside id="fade">
+      <img style="position:fixed; top:0; right:15px; width:88px; height:88px;" src="assets/images/DPAP_CLS2.png">
+    </aside>
+  </div>
+  <div class="footer" style="opacity:.4; cursor:default">
+    <span>Copyright © 2019 Northrop Grumman</span>
+  </div>
+  <div class="spinner" style="top:calc(50% - 50px); left:calc(50% - 50px); cursor:none"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+</ng-template>
+-->
