@@ -1,7 +1,7 @@
 {
   "qaURL": "http://140.188.65.80:8081/qa_app",
   "rulesURL": "https://www.google.com",
-  "dbAdminToolsURL": "https://www.bing.com",
+  "dbAdminToolsURL": "https://www.google.com",
   "ngLink": "https://www.northropgrumman.com/Pages/default.aspx",
   "dpapLink": "https://www.acq.osd.mil/dpap"
 }

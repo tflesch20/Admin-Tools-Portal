@@ -1,13 +1,13 @@
 import { Component, Inject, OnDestroy, HostListener } from '@angular/core';
 import { ConfigService, QA_LINK, RULES_LINK, DB_LINK, NG_LINK, DPAP_LINK } from './services/config';
-import { interval, Subscription } from 'rxjs';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent { // implements OnDestroy {
+export class AppComponent {
 
   rendering: boolean;
   expanded: boolean;
