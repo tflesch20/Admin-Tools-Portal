@@ -1,9 +1,9 @@
 <ng-template [ngIf]="!rendering">
   <div class="border" style="top:0; left:0"></div>
   <div class="border" style="top:0; right:0"></div>
-  <input id="fadeButton" type="button" class="button" (click)="inProgress('DBAdminTool UI')" style="top:calc(80% - 10vh); left:calc(50% - 40vw)" value="DBAdminTool UI" readonly/>
-  <input id="fadeButton" type="button" class="button" (click)="inProgress('Rules UI')" style="top:calc(55% - 10vh); left:calc(50% - 40vw)" value="Rules UI" readonly/>
-  <input id="fadeButton" type="button" class="button" (click)="inProgress('QA UI')" style="top:calc(30% - 10vh); left:calc(50% - 40vw)" value="QA UI" readonly/>
+  <input id="fadeButton" type="button" class="button" (click)="inProgress('DBAdminTool UI')" style="top:calc(80% - 10vh); left:calc(50% - 40vw)" value="DBAdminToolUI" readonly/>
+  <input id="fadeButton" type="button" class="button" (click)="inProgress('Rules UI')" style="top:calc(55% - 10vh); left:calc(50% - 40vw)" value="RulesUI" readonly/>
+  <input id="fadeButton" type="button" class="button" (click)="inProgress('QA UI')" style="top:calc(30% - 10vh); left:calc(50% - 40vw)" value="QAUI" readonly/>
   <div (mouseenter)="expanded=true" (mouseleave)="expanded=false" class="header">
     <span id="fadeHeader" style="font-family: Verdana, Geneva, Tahoma, sans-serif">Welcome to the Clause Logic<br>Data Admin Tools Portal</span>
     <div *ngIf="expanded">
@@ -24,9 +24,9 @@
 <ng-template [ngIf]="rendering">
   <div class="border" style="top:0; left:0; opacity:.4"></div>
   <div class="border" style="top:0; right:0; opacity:.4"></div>
-  <input id="fadeButton" class="backgroundButton" style="top:calc(80% - 10vh); left:calc(50% - 40vw); cursor:not-allowed" value="DBAdminTool UI" readonly/>
-  <input id="fadeButton" class="backgroundButton" style="top:calc(55% - 10vh); left:calc(50% - 40vw); cursor:not-allowed" value="Rules UI" readonly />
-  <input id="fadeButton" class="backgroundButton" style="top:calc(30% - 10vh); left:calc(50% - 40vw); cursor:not-allowed" value="QA UI" readonly/>
+  <input id="fadeButton" class="backgroundButton" style="top:calc(80% - 10vh); left:calc(50% - 40vw); cursor:not-allowed" value="DBAdminToolUI" readonly/>
+  <input id="fadeButton" class="backgroundButton" style="top:calc(55% - 10vh); left:calc(50% - 40vw); cursor:not-allowed" value="RulesUI" readonly />
+  <input id="fadeButton" class="backgroundButton" style="top:calc(30% - 10vh); left:calc(50% - 40vw); cursor:not-allowed" value="QAUI" readonly/>
   <div id="fadeHeader" class="backgroundHeader" style="opacity:.4; cursor:default">
     <span style="font-family: Verdana, Geneva, Tahoma, sans-serif">Welcome to the Clause Logic<br>Data Admin Tools Portal</span>
     <aside id="fade">
